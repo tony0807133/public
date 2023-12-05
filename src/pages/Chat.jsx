@@ -29,12 +29,21 @@ const Chat = () => {
         checkUser();
     }, [navigate]);
 
-    useEffect(()=>{
-        if(currentUser){
+    useEffect(() => {
+        if (currentUser) {
             socket.current = io(host);
-            socket.current.emit("add-user",currentUser._id);
+    
+            socket.current.on("connect", () => {
+                console.log("Socket connected");
+                socket.current.emit("add-user", currentUser._id);
+            });
+    
+            socket.current.on("connect_error", (error) => {
+                console.error("Socket connection error:", error);
+                // Handle the error (e.g., show an error message to the user)
+            });
         }
-    },[currentUser])
+        }, [currentUser]);
 
     useEffect(() => {
         const fetchContacts = async () => {
