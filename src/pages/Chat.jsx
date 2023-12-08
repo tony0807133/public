@@ -104,6 +104,17 @@ const Container = styled.div`
             grid-template-columns: 35% 60%;
         }
     }
+    @media screen and (min-width:320px) and (max-width:480px){
+        height: 100vh;
+        width: 100vw;
+        grid-template-columns: 35% 60%;
+        .container {
+            height: 100vh;
+            width: 100vw;
+        }
+    }
+
+
 `;
 
 export default Chat;
