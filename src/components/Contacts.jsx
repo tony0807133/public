@@ -146,15 +146,52 @@ background-color: #080420;
             color: white;
         }
     }
-    @media screen and (min-width:320px) and (max-width:480px){
-        gap: 0.5rem;
-        .username{
-            h4{
-                font-size: 0.5rem;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    .brand{
+        gap: 0.2rem;
+        img{
+            height: 1.2rem;
+        }
+        h3{
+            font-size: 0.6rem;
+        }
+    }
+    .contacts{
+        gap: 0.2rem;
+        .contact{
+            gap: 0.1rem;
+            .avatar{
+                img{
+                    height: 1.5rem;
+                }
+            }
+            .username{
+                h4{
+                    font-size: 0.6rem;
+                }
             }
         }
     }
+    .current-user{
+        gap: 0.3rem;
+        .avatar{
+            img{
+                height: 1.5rem;
+            }
+        }
+        .username {
+            h4 {
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+
+
 }
+
+
 `;
 
 export default Contacts;
