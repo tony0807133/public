@@ -181,5 +181,34 @@ overflow: hidden;
     }
   }
 }
+
+@media screen and (min-width:320px) and (max-width:480px){
+  padding-top: 0.5rem;
+  .chat-header{
+    .user-details{
+      gap: 0.5rem;
+      .avatar{
+        img{
+          height: 2rem;
+        }
+      }
+      .username{
+        h4{
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  .chat-messages{
+    padding: 0.5rem 0.5rem;
+    gap: 0.4rem;
+    .message{
+      .content{
+        max-width: 100%;
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
 `;
 export default ChatContainer;
