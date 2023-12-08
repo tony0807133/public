@@ -150,5 +150,38 @@ const Container = styled.div`
       }
     }
   }
+
+@media screen and (min-width:320px) and (max-width:480px){
+  padding-bottom: 2rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  .button-container{
+    .emoji{
+      height: 1rem;
+      .epr-emoji-category-label{
+        height: 1rem;
+      }
+    }
+
+  }
+  .input-container{
+    gap: 0.5rem;
+    width: 100%;
+    border-radius: 2rem;
+    height: 2rem;
+    input{
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  button{
+    padding: 0rem 0.6rem;
+    border-radius: 2rem;
+    svg{
+      font-size: 1rem;
+    }
+  }
+}
+}
+
 `;
 export default ChatInput;
