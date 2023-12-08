@@ -29,6 +29,12 @@ svg{
     font-size: 1.3rem;
     color: #ebe7ff;
 }
+@media screen and (min-width:320px) and (max-width:480px){
+    svg{
+        font-size: 1rem;
+    }
+}
+
 `;
 
 export default Logout;
