@@ -73,18 +73,6 @@ const ChatContainer = ({ currentChat, currentUser, socket }) => {
     <>
       {currentChat && (
         <Container>
-            <div className="ads">
-                <script type="text/javascript">
-	atOptions = {
-		'key' : '033fd87e7b22f0d74610004fb791928c',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="//talentednowhere.com/033fd87e7b22f0d74610004fb791928c/invoke.js"></scr' + 'ipt>');
-</script>
-            </div>
           <div className="chat-header">
             <div className="user-details">
               <div className="avatar">
