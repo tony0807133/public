@@ -81,8 +81,6 @@ const Chat = () => {
                     <ChatContainer currentChat={currentChat} currentUser={currentUser} socket={socket}/>
                 )}
             </div>
-                <script async="async" data-cfasync="false" src="//talentednowhere.com/3875534e241c515d6b09d6feeceb94e8/invoke.js"></script>
-<div id="container-3875534e241c515d6b09d6feeceb94e8"></div>
         </Container>
     );
 };
