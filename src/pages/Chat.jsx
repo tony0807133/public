@@ -72,6 +72,18 @@ const Chat = () => {
 
     return (
         <Container>
+            <div className="ads">
+                <script type="text/javascript">
+	atOptions = {
+		'key' : '033fd87e7b22f0d74610004fb791928c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//talentednowhere.com/033fd87e7b22f0d74610004fb791928c/invoke.js"></scr' + 'ipt>');
+</script>
+            </div>
             <div className="container">
                 <Contacts contacts={contacts} currentUser={currentUser} changeChat={handleChatChange} />
                 {isLoading && currentChat === undefined ? (
@@ -81,6 +93,8 @@ const Chat = () => {
                     <ChatContainer currentChat={currentChat} currentUser={currentUser} socket={socket}/>
                 )}
             </div>
+                <script async="async" data-cfasync="false" src="//talentednowhere.com/3875534e241c515d6b09d6feeceb94e8/invoke.js"></script>
+<div id="container-3875534e241c515d6b09d6feeceb94e8"></div>
         </Container>
     );
 };
